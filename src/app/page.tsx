@@ -4,8 +4,8 @@ import React, { useEffect, useState } from 'react';
 import { Container, Typography, Grid } from '@mui/material';
 
 const teams = {
-  red: ['Alice', 'Bob', 'Charlie', 'David'],
-  blue: ['Eve', 'Frank', 'Grace', 'Hank'],
+  red: ['Alice', 'Bob', 'Charlie', 'David', 'Alice', 'Bob', 'Charlie', 'David'],
+  blue: ['Eve', 'Frank', 'Grace', 'Hank', 'Alice', 'Bob', 'Charlie', 'David'],
 };
 
 const Home = () => {
@@ -42,7 +42,7 @@ const Home = () => {
 
   return (
     <Container className="p-6 mx-auto h-screen bg-cover bg-center flex items-center justify-center bg-[url('/Red-Team-vs-Blue-Team-Cyber-Security.jpg')]">
-      <Grid container spacing={4} className="text-center bg-white bg-opacity-60 p-4 rounded-md">
+      <Grid container spacing={4} className="text-center bg-white bg-opacity-60 p-1 rounded-md m-1">
         <Grid item xs={12} sm={6}>
           <Typography variant="h4" className="text-red-500 text-5xl mb-4">Red Team</Typography>
           {visibleRedTeam.map((member, index) => (
