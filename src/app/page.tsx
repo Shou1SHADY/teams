@@ -12,7 +12,7 @@ const Home = () => {
   const [visibleRedTeam, setVisibleRedTeam] = useState<string[]>([]);
   const [visibleBlueTeam, setVisibleBlueTeam] = useState<string[]>([]);
 
-  const delay = 300; // 0.3 seconds
+  const delay = 1000; // 0.3 seconds
 
   useEffect(() => {
     let redTeamTimeouts: NodeJS.Timeout[] = [];
